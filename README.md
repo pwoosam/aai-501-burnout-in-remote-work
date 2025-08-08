@@ -10,18 +10,40 @@ This project analyzes burnout in remote work settings using machine learning tec
 ##  Workflow Overview
 
 1. **Data Inspection Cleaning**
+    - Load the dataset
+    - Filter for "Remote" Work_Arrangement
+    - Check for duplicates
+    - Handle missing values
+    - Check for invalid values
+    - One-hot and multi-hot encoding of categorical variables
 2. **Feature Selection**
+    - Exploratory Data Analysis (EDA)
+    - Correlation analysis
+    - Statistical significance testing
 3. **Model Development**
+    - Split data into training and testing sets
+    - Train multiple models (e.g., Logistic Regression, Random Forest, XGBoost)
+    - Model evaluation using metrics like confusion matrix, precision, and recall
 4. **Model Evaluation**
-
-##  Code Architecture
+    - Compare model performance
+    - Select the best-performing model based on evaluation metrics
 
 ##  Dependencies
+
+- Python 3.x
+- Pandas
+- NumPy
+- Scipy
+- Scikit-learn
+- XGBoost
+- Imblearn
+- Matplotlib
+- Seaborn
 
 ##  How to Run
 
 ```bash
 git clone <repo_url>
 cd <repo_folder>
-jupyter notebook <notebook_file>.ipynb
+jupyter notebook ./Burnout.ipynb
 ```
